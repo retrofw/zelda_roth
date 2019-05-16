@@ -1,3 +1,7 @@
+*.elf
+*.ipk
+*.opk
+
 # Prerequisites
 *.d
 
