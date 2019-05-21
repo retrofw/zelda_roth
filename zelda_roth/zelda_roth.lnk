@@ -1,0 +1,4 @@
+title=Zelda ROTH
+description=Zelda ROTH port
+exec=/home/retrofw/games/zelda_roth/zelda_roth.elf
+clock=600

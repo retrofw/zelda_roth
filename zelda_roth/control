@@ -1,0 +1,10 @@
+Package: zelda_roth
+Version: 
+Description: RetroGame port of Zelda ROTH
+Section: emus
+Priority: optional
+Maintainer: pingflood
+Architecture: mipsel
+Homepage: https://github.com/retrofw/zelda_roth
+Depends:
+Source: https://github.com/retrofw/zelda_roth
