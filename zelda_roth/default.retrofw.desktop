@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zelda ROTH
+Comment=Zelda ROTH game port
+Exec=zelda_roth.dge
+Icon=zelda_roth
+Categories=games;
+Terminal=false
+Type=Application
+StartupNotify=true
