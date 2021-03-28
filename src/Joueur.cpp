@@ -120,10 +120,10 @@ void Joueur::save() {
     ostringstream im;
     im << numSave;
 
-    sprintf(home_path, "%s/.zelda_roth/slot", getenv("HOME"));
+    sprintf(home_path, "%s/.zelda_roth", getenv("HOME"));
     mkdir(home_path, 0755);
 
-    ofstream f(((string)home_path + im.str() + ".dat").c_str(),ios::out | ios::binary);
+    ofstream f(((string)home_path + "/slot" + im.str() + ".dat").c_str(),ios::out | ios::binary);
     f.write((char *)&tps,sizeof(int));
     f.write((char *)&zone,sizeof(int));
     f.write((char *)&xd,sizeof(int));
@@ -167,9 +167,9 @@ void Joueur::load() {
     ostringstream im;
     im << numSave;
 
-    sprintf(home_path, "%s/.zelda_roth/slot", getenv("HOME"));
+    sprintf(home_path, "%s/.zelda_roth", getenv("HOME"));
 
-    ifstream f(((string)home_path + im.str() + ".dat").c_str(),ios::in | ios::binary);
+    ifstream f(((string)home_path + "/slot" + im.str() + ".dat").c_str(),ios::in | ios::binary);
     if(!f.is_open()) return;
     f.read((char *)&temps,sizeof(int));
     f.read((char *)&zone,sizeof(int)); gpJeu->setZone(zone);
